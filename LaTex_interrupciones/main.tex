@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Interrupciones}
+\author{Andrés Felipe Rodríguez Ferrer\\\\Informatica II\\\\1020496316\\}
+\date{Junio 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+Las interrupciones son mecanismos o instrucciones temporales, que se implementan en los microprocesadores para indicarle al computador que debe detener la ejecución de un programa de modo que el sistema pueda realizar una acción para tratarla. Cuando se termina la instrucción se devuelve el control al programa anterior.\citep{1}\\\\
+La historia de las interrupciones, se podría que empezó con las máquinas de vapor, con un sistema de seguridad que se denominaba ‘El gobernador de inercia’, con este instrumento se regulaba el paso del vapor, para evitar que la maquina se desbocara y se dañara\citep{2}. Avanzando a través del tiempo y con máquinas más sofisticadas como son los computadores, la primera técnica de interrupción se denomina ‘polling’ o ‘sondeo’, consistía en estar constantemente en una operación de consulta, esperando un dato o un valor recibida por un sistema periférico, que interrumpiera el programa y realizar la acción necesaria, el problema con este tipo de interrupción, era que las consultas que se realizaban constantemente, ya que consumía mucho tiempo y recursos en realizar dichas instrucciones de consulta. Luego de esto buscar solución a este problema, se implementan las interrupciones que anteriormente se definió, ya el sistema no se encontraba en consultas continuas, sino estaba a la espera de algún dato o valor que lo interrumpiera y cuando llegara realizar dicha actividad\citep{3}. .\\\\Dependiendo de donde provengan el dato o valor que genere la interrupción se pueden clasificar de la siguiente manera:\\\\ 
+1. Interrupciones internas de hardware: son aquellas que son generadas por algunos eventos que surgen durante la realización de un programa. Estas interrupciones en su totalidad son manejadas por el hardware y no hay manera de poder modificarlas. Aunque no se puedan controlar directamente estas interrupciones, si es permitido utilizar sus características en el computador para nuestro beneficio.\citep{4}\\\\
+2.	Interrupciones externas de hardware: este tipo son generadas por las peticiones de los dispositivos periféricos. No es posible detener las interrupciones externas. Estas interrupciones no se envían directamente a la CPU, sino a un circuito integrado, cuya única función es exclusivamente el tratar con este tipo de interrupciones.\citep{4}\\\\
+3. Interrupciones de software: este tipo se puede activar directamente por el lenguaje ensamblador. Este tipo de interrupción es utilizada para la creación de programas, se emplea con programas más cortos, se vuelve más fácil entenderlos y generalmente se tiene un desempeño mejor, debido a que su tamaño se ve reducido. Por más potente que sea un lenguaje de programación se debe recurrir muchas veces llamando al ensamblador o al sistema operativo. Cada procesador tiene un lenguaje ensamblador diferente, y cada sistema operativo tiene una estructura de interfaz diferente, además los diferentes compiladores tienen diferentes maneras de definir la información que pasa hacia una función.\citep{4}\\\\
+4. Las excepciones: este tipo son generadas cuando se está ejecutando un programa y el procesador detecta una situación anormal, esto podría significar detener el programa hasta que se realice la acción debida. Generalmente son provocadas por realizarse una operación incorrecta o no permitidas, dado es el caso de dividir algún numero entre 0, el acceso a espacios de memoria no permitidos, entre otros.\citep{3}\citep{5}\\
+
+\bibliographystyle{plain}
+\bibliography{BIBLIOGRAFIA}
+\end{document}
+
